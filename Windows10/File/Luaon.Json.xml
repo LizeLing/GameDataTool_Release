@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Luaon.Json</name>
+    </assembly>
+    <members>
+        <member name="T:Luaon.Json.JsonLuaWriter">
+            <summary>
+            A writer that accepts JSON tokens but outputs Lua table expression.
+            </summary>
+        </member>
+        <member name="P:Luaon.Json.JsonLuaWriter.MaxUnquotedNameLength">
+            <summary>
+            Gets/sets the maximum allowed table field name that will be checked for chance of
+            using <c>Name = </c> expression instad of <c>["key"] = </c>, to reduce the
+            generated code length and improve redability.
+            </summary>
+            <value>A positive value, or <c>0</c> to disable this feature.</value>
+            <remarks>The default value is <c>64</c>.</remarks>
+        </member>
+        <member name="P:Luaon.Json.JsonLuaWriter.Indentation">
+            <summary>
+            Gets or sets how many <see cref="P:Luaon.Json.JsonLuaWriter.IndentChar"/>s to write for each level in the hierarchy
+            when <see cref="T:Luaon.Formatting"/> is set to <see cref="F:Luaon.Formatting.Prettified"/>.
+            </summary>
+        </member>
+        <member name="P:Luaon.Json.JsonLuaWriter.IndentChar">
+            <summary>
+            Gets/sets which character to use for indenting
+            when <see cref="T:Luaon.Formatting"/> is set to <see cref="F:Luaon.Formatting.Prettified"/>.
+            </summary>
+        </member>
+        <member name="M:Luaon.Json.JsonLuaWriter.WriteStartArray">
+            <inheritdoc />
+        </member>
+        <member name="M:Luaon.Json.JsonLuaWriter.WriteEndArray">
+            <inheritdoc />
+        </member>
+        <member name="M:Luaon.Json.JsonLuaWriter.WriteStartObject">
+            <inheritdoc />
+        </member>
+        <member name="M:Luaon.Json.JsonLuaWriter.WriteEndObject">
+            <inheritdoc />
+        </member>
+        <member name="M:Luaon.Json.JsonLuaWriter.WriteStartConstructor(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Luaon.Json.JsonLuaWriter.WriteEndConstructor">
+            <inheritdoc />
+        </member>
+        <member name="M:Luaon.Json.JsonLuaWriter.WriteEnd(Newtonsoft.Json.JsonToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:Luaon.Json.JsonLuaWriter.WritePropertyName(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Luaon.Json.JsonLuaWriter.WriteIndent">
+            <inheritdoc />
+        </member>
+        <member name="M:Luaon.Json.JsonLuaWriter.WriteValueDelimiter">
+            <inheritdoc />
+        </member>
+        <member name="M:Luaon.Json.JsonLuaWriter.WriteIndentSpace">
+            <inheritdoc />
+        </member>
+        <member name="M:Luaon.Json.JsonLuaWriter.WriteNull">
+            <inheritdoc />
+        </member>
+        <member name="M:Luaon.Json.JsonLuaWriter.WriteUndefined">
+            <inheritdoc />
+        </member>
+        <member name="M:Luaon.Json.JsonLuaWriter.WriteRaw(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Luaon.Json.JsonLuaWriter.WriteValue(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Luaon.Json.JsonLuaWriter.WriteValue(System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:Luaon.Json.JsonLuaWriter.WriteValue(System.Char)">
+            <inheritdoc />
+        </member>
+        <member name="M:Luaon.Json.JsonLuaWriter.WriteValue(System.Byte)">
+            <inheritdoc />
+        </member>
+        <member name="M:Luaon.Json.JsonLuaWriter.WriteValue(System.SByte)">
+            <inheritdoc />
+        </member>
+        <member name="M:Luaon.Json.JsonLuaWriter.WriteValue(System.Int16)">
+            <inheritdoc />
+        </member>
+        <member name="M:Luaon.Json.JsonLuaWriter.WriteValue(System.UInt16)">
+            <inheritdoc />
+        </member>
+        <member name="M:Luaon.Json.JsonLuaWriter.WriteValue(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Luaon.Json.JsonLuaWriter.WriteValue(System.UInt32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Luaon.Json.JsonLuaWriter.WriteValue(System.Int64)">
+            <inheritdoc />
+        </member>
+        <member name="M:Luaon.Json.JsonLuaWriter.WriteValue(System.UInt64)">
+            <inheritdoc />
+        </member>
+        <member name="M:Luaon.Json.JsonLuaWriter.WriteValue(System.Single)">
+            <inheritdoc />
+        </member>
+        <member name="M:Luaon.Json.JsonLuaWriter.WriteValue(System.Double)">
+            <inheritdoc />
+        </member>
+        <member name="M:Luaon.Json.JsonLuaWriter.WriteValue(System.Decimal)">
+            <inheritdoc />
+        </member>
+        <member name="M:Luaon.Json.JsonLuaWriter.WriteValue(System.DateTime)">
+            <inheritdoc />
+        </member>
+        <member name="M:Luaon.Json.JsonLuaWriter.WriteValue(System.DateTimeOffset)">
+            <inheritdoc />
+        </member>
+        <member name="M:Luaon.Json.JsonLuaWriter.WriteValue(System.Byte[])">
+            <inheritdoc />
+        </member>
+        <member name="M:Luaon.Json.JsonLuaWriter.WriteValue(System.Guid)">
+            <inheritdoc />
+        </member>
+        <member name="M:Luaon.Json.JsonLuaWriter.WriteValue(System.TimeSpan)">
+            <inheritdoc />
+        </member>
+        <member name="M:Luaon.Json.JsonLuaWriter.WriteValue(System.Uri)">
+            <inheritdoc />
+        </member>
+        <member name="M:Luaon.Json.JsonLuaWriter.Flush">
+            <inheritdoc />
+        </member>
+        <member name="M:Luaon.Json.JsonLuaWriter.Dispose(System.Boolean)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
